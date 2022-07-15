@@ -49,15 +49,21 @@ int main() {
 	scanf_s("%d", &sec);
 	Q_2(sec);
 
+	//3번
+	color();
 
 
 	//4번
 	rewind(stdin);
 	printf("첫번째 문자 입력\n");
-	char a = getchar();
+	char a;// = getchar();
+	scanf_s("%c", &a, 1);
 	rewind(stdin);
+
 	printf("두번째 문자 입력\n");
-	char b = getchar();
+	char b; // = getchar();
+	scanf_s("%c", &b, 1);
+	
 	change_color(a, b);
 
 	return 0;
