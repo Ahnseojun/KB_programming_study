@@ -1,6 +1,0 @@
-﻿  Lotto2.c
-D:\VS\Solution\Solution\Lotto2.c(18,2): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\VS\Solution\Solution\Lotto2.c(18,22): warning C4013: 'time'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\VS\Solution\Solution\Lotto2.c(24,18): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\VS\Solution\Solution\Lotto2.c(34,9): warning C4013: 'abs'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-D:\VS\Solution\Solution\Lotto2.c(3): fatal error C1075: '{': 일치하는 토큰을 찾을 수 없습니다.
