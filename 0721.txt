@@ -1,1 +1,8 @@
 0840h
+git init을 한 폴더
+github에 파일이 있으면 pull로 가져오기
+파일 추가
+git add .
+git commit -m "ddd"
+
+git push https://github.com/Ahnseojun/git_console.git main
