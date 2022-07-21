@@ -42,13 +42,13 @@ int between(int* a, int* b) {
 
 int main() {
 	//1¹ø
-	//int num1 = 10;	
-	//raise(num1);
-	//printf("num1 -> %d\n", num1);
+	int num1 = 10;	
+	raise(num1);
+	printf("num1 -> %d\n", num1);
 
-	//raise_pointer(&num1);
-	//printf("num1_pointer -> %d\n", num1);
-	//printf("-------------------\n");
+	raise_pointer(&num1);
+	printf("num1_pointer -> %d\n", num1);
+	printf("-------------------\n");
 
 	//2¹ø
 
