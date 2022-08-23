@@ -1,0 +1,12 @@
+Person 클래스를 부모 클래스로
+Student와 Teacher 클래스를 자식 클래스로 두기
+
+person -> 이름, 나이
+student -> 학교이름
+teacher -> 소속
+
+자신의 정보(student)와	-> 이름, 나이, 학교이름 출력
+앞에 있는 사람 정보(teacher) 출력하게끔 하기
+		-> 이름, 나이, 소속 출력
+
+- super() 이용해서 멤버들 초기화
