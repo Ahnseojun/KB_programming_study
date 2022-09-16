@@ -12,7 +12,11 @@
 #contents>#main_aside {
     width: 200px;
     float: right;
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
+
+
 #main_section>article.main_article {
     margin-bottom: 10px;
     padding: 20px;
