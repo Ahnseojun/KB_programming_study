@@ -1,0 +1,43 @@
+-- 간단한 함수 -- 
+
+-- set SERVEROUTPUT on;  --dbms output(콘솔로그)때문에 하는 것
+
+-- djlee라는 텍스트 반환하는 함수
+
+create or replace function mytest_func return varchar is
+v_test varchar2(100);
+begin v_test := '이동준';
+return v_test;
+end;
+/
+select mytest_func() from dual; -- dual은 임시테이블; 함수 기능테스트시 쓰임;
+
+select * from simple_test_table where name = mytest_func();
+
+
+-- 
+
+-- 번호를 통해서 이름값을 반환하는 함수
+
+create or replace function func_getperson(v_num int)
+return varchar is v_name varchar(100);
+begin select name into v_name from simple_test_table where num = v_num;
+return v_name;
+
+exception when others then
+DBMS_OUTPUT.PUT_LINE('exception occurred! ('||sqlcode||'):'||sqlerrm);
+return '';
+end;
+
+
+
+select mytest_func() from dual;
+/
+exec add_person(50, func_getperson(1), '010-9999-9191');
+exec add_person(100, mytest_func(), '010-2222-1111');
+
+select * from simple_test_table;
+
+
+--
+

@@ -1,0 +1,98 @@
+--
+create table simple_test_table (
+    num int primary key,
+    name varchar2 (30) not null,
+    phone_number varchar2(20) unique
+);
+
+insert into simple_test_table values (1, '이용희', null);
+insert into simple_test_table values (2, '이동준', '010-2940-1613');
+
+
+select * from simple_test_table;
+
+-- 
+
+exec add_person(3, '김보규','010-7777-8888');
+select * from simple_test_table;
+
+exec add_person(4, '도광현', '010-7878-9898');
+exec delete_person(4);
+
+select * from simple_test_table;
+
+
+-- 
+-- add_person 없으면 만들고 있으면 덮어 씀
+
+create or replace procedure add_person (
+mynum in int,
+myname varchar2,
+mypn varchar2 
+)
+is begin -- begin 뒤에 반드시 띄어쓰기 
+insert into simple_test_table values (mynum, myname, mypn);
+end add_person;
+
+
+--
+
+create or replace procedure delete_person
+( mynum in int)
+is begin delete from simple_test_table where num=mynum;
+end delete_person;
+
+-- 
+-- update
+create procedure update_person
+(
+mynum in int,
+changename varchar2
+)
+is tempvar varchar2(20) :='학생';
+begin tempvar := changename || tempvar;
+update simple_test_table set name = tempvar
+where num = mynum;
+end update_person;
+
+-- 
+
+exec update_person(1, '최호준');
+select * from simple_test_table;
+
+--
+
+
+-- select procedure는 cursor라는 걸 반환해줌
+-- cursor라는 걸 통해서 결과를 출력
+-- cursor란? sql 결과를 저장하는ㅁ 메모리의 위치를 가리키는 포인터
+
+create or REPLACE procedure person_select(
+myname in varchar2,
+o_cursor out sys_refcursor)
+is begin open o_cursor
+for
+select num, name, phone_number from simple_test_table
+where name = myname;
+exception when others then
+dbms_output.put_line('sql error:'|| sqlerrm);
+end person_select;
+
+-- *** set serveroupput on; ( 오류 뜨면 입력 )
+
+-- 
+
+select * from simple_test_table;
+-- 실험용 데이터 확인 및 추가
+exec add_person(5, '이동준','010-5517-1234');
+exec add_person(6, '이동준','010-2517-1234');
+exec add_person(7, '이동준','010-3517-1234');
+-- select 프로시저 호출
+var o_cursor refcursor
+exec person_select('이동준', :o_cursor)
+
+print o_cursor;
+
+
+--end-- 
+
