@@ -1,0 +1,16 @@
+/* footer */
+#main_footer {
+    width: 960px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid white;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 5px solid gold;
+}
+
+.brline{margin: 10px;}
+
