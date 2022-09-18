@@ -1,0 +1,12 @@
+>> 이중 상속 이용 (Java에선 추상 클래스 있어야 가능한 것)
+
+- 추상 클래스 Phone 생성
+	=> 추상 메소드 getNum(), getName(), print()
+- Phone을 상속받아 CellPhone 클래스 생성
+	=> num, name과 생성자, Phone의 추상 메소드 오버라이딩
+- CellPhone을 상속받아 SmartPhone 클래스 생성
+	=> androidver, account와 생성자, CellPhone의 print() 오버라이딩
+
+- CellPhone과 SmartPhone에 대한 객체 생성
+	(생성자로 변수 초기화)
+- 두 객체의 print() 함수로 각 객체의 멤버 변수 정보 출력하기
