@@ -9,12 +9,12 @@
 
 #main_header>#title {
     position: absolute;
-    left: 20px; top: 30px;
+    left: 5px; top: 20px;
 }
 
 #main_header>#main_gnb{
     position: absolute;
-    right: 0px; top: 0px;
+    right: 0px; top: 5px;
 }
 
 #main_header>#main_lnb{
@@ -31,7 +31,7 @@
     display: block;
     padding: 10px 20px;
     color: white;
-    border : 2px solid gold;
+    border : 2px solid rgb(89, 80, 40);
 }
 #main_gnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
 #main_gnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
@@ -45,7 +45,7 @@
     display: block;
     color: white;
     padding: 10px 20px;
-    border : 2px solid gold;
+    border : 2px solid rgb(89, 80, 40);
 }
 #main_lnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
 #main_lnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
