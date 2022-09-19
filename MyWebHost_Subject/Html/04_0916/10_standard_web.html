@@ -28,13 +28,7 @@
 
       body {
         font-family: "Times New Roman", Times, serif;
-        background: linear-gradient(
-          #ddd5d0,
-          #cfc0bd,
-          #b8b8aa,
-          #7f9183,
-          #586f6b
-        );
+        background: linear-gradient(#cfc0bd, #b8b8aa, #7f9183, #586f6b);
       }
 
       h1,
@@ -85,7 +79,7 @@
     <!-- 메인 헤더 -->
     <header id="main_header">
       <div id="title">
-        <h1 style="text-shadow: 3px 3px 3px #fff0f0">영화 좀 봅시다!</h1>
+        <h1 style="text-shadow: 3px 3px 3px #fff0f0">영화를 봅시다!!</h1>
         <h2 style="text-shadow: 3px 3px 3px #fff0f0">
           좋은 사람들과 좋은 곳에서
         </h2>
@@ -239,8 +233,8 @@
         <input type="radio" name="tab" id="first" checked />
         <input type="radio" name="tab" id="second" />
         <section class="buttons">
-          <label for="first">First</label>
-          <label for="second">Second</label>
+          <label for="first">배우</label>
+          <label for="second">추천작품</label>
         </section>
 
         <div class="tab_item">
@@ -252,8 +246,8 @@
                   <img src="https://picsum.photos/id/870/45/45" alt="" />
                 </div>
                 <div class="description">
-                  <strong>키아누 리브스</strong>
-                  <p>2022-09-16</p>
+                  <strong>Keanu Reeves</strong>
+                  <p>키아누 리브스</p>
                 </div>
               </a>
             </li>
@@ -261,11 +255,14 @@
             <li class="item" id="two">
               <a href="#two_2">
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img
+                    src="https://picsum.photos/id/684/45/45?grayscale"
+                    alt=""
+                  />
                 </div>
                 <div class="description">
-                  <strong>맷 데이먼</strong>
-                  <p>2022-09-16</p>
+                  <strong>Matt Damon</strong>
+                  <p>맷 데이먼</p>
                 </div>
               </a>
             </li>
@@ -273,11 +270,11 @@
             <li class="item" id="three">
               <a href="#three_3">
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img src="https://picsum.photos/id/184/45/45" alt="" />
                 </div>
                 <div class="description">
-                  <strong>크리스찬 베일</strong>
-                  <p>2022-09-16</p>
+                  <strong>Christian Bale</strong>
+                  <p>크리스찬 베일</p>
                 </div>
               </a>
             </li>
@@ -285,64 +282,93 @@
             <li class="item" id="four">
               <a href="#four_4">
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img src="https://picsum.photos/id/84/45/45" alt="" />
                 </div>
                 <div class="description">
-                  <strong>브래들리 쿠퍼</strong>
-                  <p>2022-09-16</p>
+                  <strong>Bradley Cooper</strong>
+                  <p>브래들리 쿠퍼</p>
                 </div>
               </a>
             </li>
           </ul>
         </div>
 
+        <!-- 추천작품 -->
         <div class="tab_item">
           <ul>
             <!-- (li>a>.thumbnail>img)*4 -->
             <li class="item">
-              <a href="#">
+              <a
+                href="https://namu.wiki/w/%ED%8F%AD%ED%92%8D%20%EC%86%8D%EC%9C%BC%EB%A1%9C"
+                target="win1"
+              >
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img
+                    src="https://w.namu.la/s/aaaa02a91f26f468537f4b51296d2d50d1124474345e448deb0bc4dff04e043f05df05c9578d915d67a5352f81e741c58a4ccc5507cb42c9135e3213772441d3be0b84ca038c376bd814a78a0d05c65084f30756bf1bc4492a8cc1d6d56a496a9fb0ab9304d00e0543b7f836438c3ef2"
+                    width="45"
+                    height="45"
+                  />
                 </div>
                 <div class="description">
-                  <strong>Html5</strong>
-                  <p>2022-09-16</p>
+                  <strong>폭풍속으로</strong>
+                  <p>키아누 리브스</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a href="#">
+              <a
+                href="https://namu.wiki/w/%EA%B5%BF%20%EC%9C%8C%20%ED%97%8C%ED%8C%85"
+                target="win1"
+              >
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img
+                    src="https://w.namu.la/s/a06117980b44705e1e2a922c9b0a4b0a46d35eba548a421868864d20bcd55c7c43a2c5f4c5bb936c6fc8961494419db0c1c4c657d825455f258c48b09aa49e8b0712b1c6bc2d00e6ca66a01d37dcfe9374cdc39618c4ed94e0e22de0ce20c34ad377568d145f6e2cd5dc8e10ba660af6"
+                    width="45"
+                    height="45"
+                  />
                 </div>
                 <div class="description">
-                  <strong>Html5</strong>
-                  <p>2022-09-16</p>
+                  <strong>굿 윌 헌팅</strong>
+                  <p>맷 데이먼</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a href="#">
+              <a
+                href="https://namu.wiki/w/%EB%B9%85%EC%87%BC%ED%8A%B8"
+                target="win1"
+              >
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img
+                    src="https://w.namu.la/s/2599ecba535ea1cc27dab43f6dfb048dc7a6934840cc12d505ef13a3d054b8c1a6f4aad87cfffe42c638866b1f84704c31e898a1fc865adb4420f5a0c1c547532f02af54fcf3e7a8d74757069a5fdfa11e80495ea14cfd900da9fedee26f00dcef5aa12ee077e3982c9cf2b97e0328de"
+                    width="45"
+                    height="45"
+                  />
                 </div>
                 <div class="description">
-                  <strong>Html5</strong>
-                  <p>2022-09-16</p>
+                  <strong>빅쇼트</strong>
+                  <p>크리스찬 베일</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a href="#">
+              <a
+                href="https://namu.wiki/w/%EB%A6%AC%EB%AF%B8%ED%8A%B8%EB%A6%AC%EC%8A%A4"
+                target="win1"
+              >
                 <div class="thumbnail">
-                  <img src="https://picsum.photos/id/684/45/45" alt="" />
+                  <img
+                    src="https://w.namu.la/s/c5e1c0f718d551956bca9f5aef7c0aad9bbfccf03228f33f921264e71f39132df87847847e3990c3422ea6e1beb04e2fa91798c4111213d1769d1b8884dc61f99f151c312e79aed9728f14036d7d865e5edcade70c0afbe7bcb59af454ce6451926815a049af6cf8a2214b6377248ebe"
+                    width="45"
+                    height="45"
+                  />
                 </div>
                 <div class="description">
-                  <strong>Html5</strong>
-                  <p>2022-09-16</p>
+                  <strong>리미트리스</strong>
+                  <p>브래들리 쿠퍼</p>
                 </div>
               </a>
             </li>
@@ -357,7 +383,7 @@
         <h3>조용히 영화를 봅시다</h3>
         <br />
         <address>재밌게 보세요</address>
-      </footer></a
-    >
+      </footer>
+    </a>
   </body>
 </html>
