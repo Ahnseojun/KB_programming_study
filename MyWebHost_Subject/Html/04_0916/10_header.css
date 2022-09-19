@@ -2,14 +2,14 @@
     /* 중앙 정렬 */
     width: 960px;
     margin: auto;
-    height: 160px;
+    height: 260px;
     /* 자식태그의 absolute 적용 */
     position: relative;
 }
 
 #main_header>#title {
     position: absolute;
-    left: 5px; top: 20px;
+    left: 5px; top: 60px;
 }
 
 #main_header>#main_gnb{
@@ -30,7 +30,7 @@
 #main_gnb>ul>li>a {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: black;
     border : 2px solid rgb(89, 80, 40);
 }
 #main_gnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
@@ -43,7 +43,7 @@
 #main_lnb>ul>li{float: left;}
 #main_lnb>ul>li>a {
     display: block;
-    color: white;
+    color: black;
     padding: 10px 20px;
     border : 2px solid rgb(89, 80, 40);
 }
