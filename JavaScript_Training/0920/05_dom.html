@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Lorem ipsum dolor sit amet.</h1>
+    <img src="" alt="" />
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <img src="" alt="" id="abcd" />
+    <script>
+      // 자바스크립트로 태그 변경
+      // 이때 핵심적으로 쓰이는 것이 document 객체
+      let title = document.querySelector("#title");
+      let img = document.getElementById("abcd");
+      title.style.color = "blue";
+      img.src =
+        "https://opgg-static.akamaized.net/images/lol/champion/Swain.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_96&v=1663334205800";
+      let h1 = document.querySelectorAll("h1");
+      let images = document.getElementsByTagName("img");
+      for (let item of h1) item.style.background = "springgreen";
+      images[0].src =
+        "https://opgg-static.akamaized.net/images/lol/champion/Zilean.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_96&v=1663334205800";
+      //prompt
+      let name = prompt("이름이 뭐에여?");
+      h1[1].textContent = name; // 입력받은 것을 3
+      // 해당 태그의 텍스트에 적음
+
+      // querySelector, querySelectorAll은 비교적 최신 문법 (c  s 선택자 잘 쓰면 태그 선택하기 수월)
+      // getElementById
+    </script>
+  </body>
+</html>
