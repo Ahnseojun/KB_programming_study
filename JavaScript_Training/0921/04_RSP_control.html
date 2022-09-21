@@ -33,51 +33,44 @@
       function fnc_result(mychoice) {
         // 0 1 2 중 하나의 값 갖게 됨
         let pc_choice = Math.floor(Math.random() * 3);
+        //
+        let pc_control_gawi = 0;
+        let pc_control_bawi = 1;
+        let pc_control_bo = 2;
+
         pcresultimg.src = gbb[pc_choice];
 
         switch (mychoice.target.id) {
           case "gawi":
             console.log("가위");
             myresultimg.src = gbb[GAWI];
-            switch (pc_choice) {
-              case GAWI:
-                result.textContent = "비김";
-                break;
+            switch (pc_control_bawi) {
               case BAWI:
+                pcresultimg.src = gbb[pc_control_bawi];
                 result.textContent = "짐";
-                break;
-              case BO:
-                result.textContent = "이김";
                 break;
             }
             break;
+
           case "bawi":
             console.log("바위");
             myresultimg.src = gbb[BAWI];
-            switch (pc_choice) {
-              case GAWI:
-                result.textContent = "이김";
-                break;
-              case BAWI:
-                result.textContent = "짐";
-                break;
+            switch (pc_control_bo) {
               case BO:
+                pcresultimg.src = gbb[pc_control_bo];
                 result.textContent = "짐";
                 break;
             }
             break;
+
           case "bo":
             console.log("보");
             myresultimg.src = gbb[BO];
-            switch (pc_choice) {
+            switch (pc_control_gawi) {
               case GAWI:
+                pcresultimg.src = gbb[pc_control_gawi];
+
                 result.textContent = "짐";
-                break;
-              case BAWI:
-                result.textContent = "이김";
-                break;
-              case BO:
-                result.textContent = "비김";
                 break;
             }
             break;
