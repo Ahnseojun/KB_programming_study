@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="gawi">가위</button>
+    <button id="bawi">바위</button>
+    <button id="bo">보</button>
+    <p>나</p>
+    <img src="" alt="" />
+    <p>상대</p>
+    <img src="" alt="" />
+    <h1></h1>
+
+    <script>
+      let myresultimg = document.querySelectorAll("img")[0];
+      let pcresultimg = document.querySelectorAll("img")[1];
+
+      let gbb = ["scissor.jpg", "rock.jpg", "paper.jpg"]; //가위 바위 보
+
+      const GAWI = 0;
+      const BAWI = 1;
+      const BO = 2;
+
+      let result = document.querySelector("h1");
+
+      // mychoice = 매개변수, 변수명은 자유롭게
+
+      function fnc_result(mychoice) {
+        // 0 1 2 중 하나의 값 갖게 됨
+        let pc_choice = Math.floor(Math.random() * 3);
+        pcresultimg.src = gbb[pc_choice];
+
+        switch (mychoice.target.id) {
+          case "gawi":
+            console.log("가위");
+            myresultimg.src = gbb[GAWI];
+            switch (pc_choice) {
+              case GAWI:
+                result.textContent = "비김";
+                break;
+              case BAWI:
+                result.textContent = "짐";
+                break;
+              case BO:
+                result.textContent = "이김";
+                break;
+            }
+            break;
+          case "bawi":
+            console.log("바위");
+            myresultimg.src = gbb[BAWI];
+            switch (pc_choice) {
+              case GAWI:
+                result.textContent = "이김";
+                break;
+              case BAWI:
+                result.textContent = "짐";
+                break;
+              case BO:
+                result.textContent = "짐";
+                break;
+            }
+            break;
+          case "bo":
+            console.log("보");
+            myresultimg.src = gbb[BO];
+            switch (pc_choice) {
+              case GAWI:
+                result.textContent = "짐";
+                break;
+              case BAWI:
+                result.textContent = "이김";
+                break;
+              case BO:
+                result.textContent = "비김";
+                break;
+            }
+            break;
+        }
+      }
+      document.querySelector("#gawi").onclick = fnc_result;
+      document.querySelector("#bawi").onclick = fnc_result;
+      document.querySelector("#bo").onclick = fnc_result;
+    </script>
+  </body>
+</html>
