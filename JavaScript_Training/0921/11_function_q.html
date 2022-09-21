@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      p {
-        color: red;
-      }
-    </style>
   </head>
   <body>
     <p></p>
@@ -17,7 +12,7 @@
     <script>
       const SIZE = 5;
 
-      function dia(SIZE) {
+      function dia(SIZE, color) {
         for (let i = 1; i <= SIZE; i++) {
           //스페이스바
           for (let j = SIZE; j > i; j--) {
@@ -25,7 +20,10 @@
           }
           //별 찍는 부분
           for (let k = 0; k < 2 * i - 1; k++) {
-            document.write("*");
+            let star = document.createElement("span");
+            star.setAttribute("style", "color:" + color);
+            document.body.appendChild(star);
+            star.innerHTML = "*";
           }
           document.write("<br>");
         }
@@ -34,13 +32,15 @@
             document.write("&nbsp;");
           }
           for (let k = 0; k < 2 * i - 1; k++) {
-            document.write("*");
+            let star = document.createElement("span");
+            star.setAttribute("style", "color:" + color);
+            document.body.appendChild(star);
+            star.innerHTML = "*";
           }
           document.write("<br>");
         }
       }
-
-      console.log(dia(SIZE));
+      console.log(dia(SIZE, "red"));
     </script>
   </body>
 </html>
