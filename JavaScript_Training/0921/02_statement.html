@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="one" type="text" />
+
+    <button id="add">계산</button>
+
+    <h1 id="result"></h1>
+
+    <script>
+      let o = document.querySelector("#one");
+
+      let add = document.querySelector("#add");
+
+      let h1 = document.querySelector("#result");
+
+      add.onclick = function () {
+        let num1 = o.value;
+        if (num1 == 0) h1.textContent = "제로";
+        else if (num1 % 2 == 0) h1.textContent = "짝수";
+        else h1.textContent = "홀수";
+      };
+    </script>
+  </body>
+</html>
