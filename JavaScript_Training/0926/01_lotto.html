@@ -5,41 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="01_gen_lotto.js"></script>
   </head>
+
   <body>
-    <button id="lotto">로또 생성</button>
     <h1></h1>
-
     <script>
-      let num = document.querySelector("#lotto");
-
-      num.onclick = function () {
-        //1. 로또 번호는 6개
-        let lotto = [];
-        for (let i = 0; i < 6; i++) {
-          //random() : 0~1사이의 랜덤한 소수
-          //floor() : 내림처리해서 정수로 변경
-          let num = Math.floor(Math.random() * 44) + 1;
-
-          for (let j in lotto) {
-            if (num == lotto[j]) {
-              //현재 새로나온 숫자가 기존 숫자와 같으면
-              num = Math.floor(Math.random() * 44) + 1;
-            }
-          }
-
-          //push() - 배열에 마지막에 값추가메서드
-          lotto.push(num);
-        }
-
-        //오름차순으로 숫자 정렬
-        lotto.sort(function (a, b) {
-          return a - b;
-        });
-
-        //문서에 출력
-        document.write("이번주 로또 번호 : " + lotto);
-      };
+      let lotto = getLotto();
+      let output = "";
+      for (let item of lotto) {
+        output += item + " ";
+      }
+      document.querySelector("h1").textContent = output;
     </script>
   </body>
 </html>
