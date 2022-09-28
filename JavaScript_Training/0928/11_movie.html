@@ -22,12 +22,50 @@
         const key = "c6fe27b526513be8acb5b310340205b6";
         const url =
           "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json";
-        const apiurl = `${url}?key=${key}&targetDt=20220927`;
+        const apiurl = `${url}?key=${key}&targetDt=20220925`;
         console.log(apiurl);
-        //
+
         const boxOfficeType = $(".boxOfficeType");
-        const showRange = $(".showrange");
+        const showRange = $(".showRange");
         const myUl = $(".boxOfficeList");
+
+        $.ajax({
+          url: apiurl,
+          dataType: "json",
+          success: function (result) {
+            console.log(result);
+            const jsonObj = result;
+            const boxOfficeResult = jsonObj["boxOfficeResult"]; //boxOfficeResult 속성
+            const movieList = boxOfficeResult["dailyBoxOfficeList"];
+
+            boxOfficeType.text(boxOfficeResult["boxofficeType"]);
+            showRange.text(boxOfficeResult["showRange"]);
+
+            //each는 js의 forEach랑 똑같은 것
+            $(movieList).each(function (index, element) {
+              const myLi = $("<li></li>");
+              const myDiv = $("<div></div>");
+              const mh2 = $("<h2></h2>");
+              const mp1 = $("<p></p>");
+              const mp2 = $("<p></p>");
+              const mp3 = $("<p></p>");
+              mh2.text(element["movieNm"]);
+              mp1.text("개봉일 : " + element["openDt"]);
+              mp2.text("누적관객수 : " + element["audiAcc"]);
+              mp3.text("순위 변동 : " + element["rankInten"]);
+
+              myLi.append(myDiv);
+              myDiv.append(mh2);
+              myDiv.append(mp1);
+              myDiv.append(mp2);
+              myDiv.append(mp3);
+              myUl.append(myLi);
+            });
+          },
+          error: () => {
+            console.log("error");
+          },
+        });
       });
     </script>
   </body>
