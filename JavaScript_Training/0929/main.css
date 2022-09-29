@@ -31,8 +31,8 @@
 }
 
 .pads>div {
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 100px;
     flex: 1;          /* 서로에게 동일한 너비를 준다 */
     cursor: pointer;  /* 손가락 모양 */
 }
