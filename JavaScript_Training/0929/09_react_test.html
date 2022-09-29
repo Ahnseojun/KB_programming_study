@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+       // alt + z 누르면 url 길이 줄여줌
+
+       let nnn = prompt("이름");
+
+      const imageUrl ="data:image/jpeg;base64,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"
+
+       // const name = "안서준";
+
+       const component = (
+         <div>
+           <h1>리액트 시작 ({nnn})</h1>
+
+             switch (nnn) {
+                 case'토끼':
+
+                     break;
+
+                 default:
+                     break;
+             }
+
+           </div>
+       );
+
+
+       const container = document.getElementById("root");
+       ReactDOM.render(component, container);
+    </script>
+  </body>
+</html>
