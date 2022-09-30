@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // alt + z 누르면 url 길이 줄여줌
+
+      let name = prompt("이름");
+
+      let imageUrl =
+        "data:image/jpeg;base64,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";
+
+      let component;
+
+      if (name == "개") {
+        imageUrl =
+          "https://opgg-static.akamaized.net/images/lol/champion/Rengar.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_92&v=1664465887660";
+      } else if (name == "토끼") {
+        imageUrl =
+          "https://opgg-static.akamaized.net/images/lol/champion/Riven.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_160&v=1664465887660";
+      } else {
+        imageUrl =
+          "https://opgg-static.akamaized.net/images/lol/champion/Swain.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_160&v=1664465887660";
+      }
+
+      component = (
+        <div>
+          <h1>리액트 시작 ({name})</h1>
+          <img src={imageUrl} />
+        </div>
+      );
+
+      const container = document.getElementById("root");
+      ReactDOM.render(component, container);
+    </script>
+  </body>
+</html>
