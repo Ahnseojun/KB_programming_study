@@ -12,7 +12,18 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      //
+      class MyApp extends React.Component {
+        // container에 그릴 component를 리턴해줌
+        render() {
+         return <div>
+            <h1>{this.props.name}</h1>
+            <img src={this.props.imgUrl} />
+          </div>;
+        }
+      }
+
+      const container = document.getElementById('root')
+      REactDOM.render(<MyApp name='안서준' imgUrl=""> container)
     </script>
   </body>
 </html>
