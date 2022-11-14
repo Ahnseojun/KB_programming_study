@@ -1,0 +1,8 @@
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\bin\Debug\HelloMyCSharpo01.exe.config
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\bin\Debug\HelloMyCSharpo01.exe
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\bin\Debug\HelloMyCSharpo01.pdb
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\obj\Debug\HelloMyCSharpo01.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\obj\Debug\HelloMyCSharpo01.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\obj\Debug\HelloMyCSharpo01.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\obj\Debug\HelloMyCSharpo01.exe
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharpo01\HelloMyCSharpo01\obj\Debug\HelloMyCSharpo01.pdb
