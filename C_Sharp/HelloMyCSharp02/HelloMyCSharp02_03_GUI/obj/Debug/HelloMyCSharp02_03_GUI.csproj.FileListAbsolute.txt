@@ -1,0 +1,11 @@
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\bin\Debug\HelloMyCSharp02_03_GUI.exe.config
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\bin\Debug\HelloMyCSharp02_03_GUI.exe
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\bin\Debug\HelloMyCSharp02_03_GUI.pdb
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.Properties.Resources.resources
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.exe
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.pdb
+C:\Users\Seojun\Desktop\VS\C_Sharp\HelloMyCSharp02\HelloMyCSharp02_03_GUI\obj\Debug\HelloMyCSharp02_03_GUI.Form1.resources
